@@ -5,7 +5,7 @@
 }
 :root {
   --text-color: white;
-  --background-url: url(./assets/black.jpg);
+  --background-url: url(./assets/blackcopia.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(160, 160, 160, 0.315);
   --surface-color-hover: rgba(0, 0, 0, 0);
@@ -15,7 +15,7 @@
 
 .light {
   --text-color: rgb(0, 0, 0);
-  --background-url: url(./assets/light.jpg);
+  --background-url: url(./assets/lightcopia.jpg);
   --stroke-color: rgb(0, 0, 0);
   --surface-color: rgba(0, 0, 0, 0.521);
   --surface-color-hover: rgba(255, 255, 255, 0.315);
@@ -68,6 +68,8 @@ body * {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  animation: efeitosaida 0.2s forwards;
   
 }
 #swith span {
@@ -81,11 +83,15 @@ border: 1px solid var(--stroke-color);
 -webkit-backdrop-filter: blur 4px;
 backdrop-filter: blur 4px;
 border-radius: 9999px;
+
+}
+
+#swith button:hover {
+outline: 8px solid var(--highlight-color-light);
 }
 
 .light #swith button {
-  right: 0;
-  left: initial;
+ animation: efeitoentrada 0.2s forwards;
 }
 
 ul {
@@ -141,4 +147,29 @@ footer {
   text-align: center;
   padding: 24px 0;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+ :root {
+  --background-url: url(./assets/black.jpg);
+ }
+ .light {
+  --background-url: url(./assets/light.jpg);
+ }
+}
+@keyframes efeitoentrada {
+from {
+left: 0;
+}
+to {
+left: 50%;
+}
+}
+@keyframes efeitosaida {
+  from {
+    left:50%;
+  }
+  to {
+    left: 0;
+  }
 }
