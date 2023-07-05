@@ -20,7 +20,7 @@
   --surface-color: rgba(0, 0, 0, 0.521);
   --surface-color-hover: rgba(255, 255, 255, 0.315);
   --highlight-color-light: rgba(0, 0, 0, 0.336);
-  --swith-url: url(./assets/sun.svg)
+  --swith-url: url(./assets/sun.svg);
 }
 
 body {
@@ -51,11 +51,10 @@ body * {
   line-height: 24px;
 }
 /*swith*/
-#swith{
+#swith {
   position: relative;
   width: 64px;
   margin: 4px auto;
-
 }
 #swith button {
   width: 32px;
@@ -69,29 +68,27 @@ body * {
   top: 50%;
   transform: translateY(-50%);
 
-  animation: efeitosaida 0.2s forwards;
-  
+  animation: efeitosaida 0.4s forwards;
 }
 #swith span {
   display: block;
   width: 64px;
   height: 24px;
   /* surface-color-light-mode */
-background: var(--surface-color);
-/* stroke-color-light-mode */
-border: 1px solid var(--stroke-color);
--webkit-backdrop-filter: blur 4px;
-backdrop-filter: blur 4px;
-border-radius: 9999px;
-
+  background: var(--surface-color);
+  /* stroke-color-light-mode */
+  border: 1px solid var(--stroke-color);
+  -webkit-backdrop-filter: blur 4px;
+  backdrop-filter: blur 4px;
+  border-radius: 9999px;
 }
 
 #swith button:hover {
-outline: 8px solid var(--highlight-color-light);
+  outline: 8px solid var(--highlight-color-light);
 }
 
 .light #swith button {
- animation: efeitoentrada 0.2s forwards;
+  animation: efeitoentrada 0.4s forwards;
 }
 
 ul {
@@ -150,24 +147,24 @@ footer {
 }
 
 @media (min-width: 700px) {
- :root {
-  --background-url: url(./assets/black.jpg);
- }
- .light {
-  --background-url: url(./assets/light.jpg);
- }
+  :root {
+    --background-url: url(./assets/black.jpg);
+  }
+  .light {
+    --background-url: url(./assets/light.jpg);
+  }
 }
 @keyframes efeitoentrada {
-from {
-left: 0;
-}
-to {
-left: 50%;
-}
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
 }
 @keyframes efeitosaida {
   from {
-    left:50%;
+    left: 50%;
   }
   to {
     left: 0;
