@@ -5,18 +5,18 @@
 }
 :root {
   --text-color: white;
-  --background-url: url(./assets/blackcopia.jpg);
+  --background-url: url(./assets/background-mobile-black.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(160, 160, 160, 0.315);
   --surface-color-hover: rgba(0, 0, 0, 0);
   --highlight-color-light: rgba(255, 255, 255, 0.2);
-  --swith-url: url(./assets/moon-stars.svg);
+  --swith-url: url(./assets/MoonStars.svg);
 }
 
 .light {
   --text-color: rgb(0, 0, 0);
-  --background-url: url(./assets/lightcopia.jpg);
-  --stroke-color: rgb(0, 0, 0);
+  --background-url: url(./assets/background-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.445);
   --surface-color: rgba(0, 0, 0, 0.521);
   --surface-color-hover: rgba(255, 255, 255, 0.315);
   --highlight-color-light: rgba(0, 0, 0, 0.336);
@@ -148,10 +148,10 @@ footer {
 
 @media (min-width: 700px) {
   :root {
-    --background-url: url(./assets/black.jpg);
+    --background-url: url(./assets/background-black.jpg);
   }
   .light {
-    --background-url: url(./assets/light.jpg);
+    --background-url: url(./assets/background-light.jpg);
   }
 }
 @keyframes efeitoentrada {
