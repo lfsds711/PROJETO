@@ -20,7 +20,7 @@
   --surface-color: rgba(0, 0, 0, 0.521);
   --surface-color-hover: rgba(255, 255, 255, 0.315);
   --highlight-color-light: rgba(0, 0, 0, 0.336);
-  --swith-url: url(./assets/sun.svg);
+  --swith-url: url(./assets/Sun.svg);
 }
 
 body {
